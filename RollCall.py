@@ -150,5 +150,3 @@ while intro != "rapid fire" and intro != "search":
 # In the Search mode,
 # 1. I haven't yet worked out how to return an error saying "the name user entered is not in database", and prompt
 # the user to try again
-
-
