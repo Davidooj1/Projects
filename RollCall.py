@@ -2,6 +2,7 @@ import re
 import csv
 import time
 
+
 intro = ""
 
 while intro != "rapid fire" and intro != "search":
@@ -66,8 +67,8 @@ while intro != "rapid fire" and intro != "search":
     if intro.lower().strip() == "search":
 
         print("1. THIS IS CAPS SENSETIVE.\n"
-              "2. Enter the first name and the first letter of the surname for each\n"
-              "3. Once you've entered all the Attendees, type done/finish/quit or end to move onto the Apologies")
+              "2. Enter the first name and the first letter of the surname for each.\n"
+              "3. Once you've entered all the Attendees, type done/finish/quit or end to move onto the Apologies.")
 
         with open("pafra.csv") as file:
             myfile = csv.reader(file)
@@ -128,10 +129,18 @@ while intro != "rapid fire" and intro != "search":
 
         time.sleep(12000)
 
+# WHAT THIS PROGRAM DOES
+
+# This is a roll call program I made for my wife, it has 2 modes. 1st mode is called rapid fire, it iterates through
+# every name in the document and prompts her to say if they attendees, apologies, chaired or took minutes. At the
+# end of the list or when the user exist via text command, the program prints a series of appended lists of who attended,
+# didn't attend, chaired and took minutes in the format which she requested.
+# The 2nd mode is called search, where it prompts the user to type in the names of who did each role, iterates through
+# the csv file to collect the name, and prints them in the same fashion as the 1st mode.
 
 
 
-# FINAL NOTES
+
 # THINGS I COULDN'T FIX YET:
 
 # In the Rapid Fire mode,
