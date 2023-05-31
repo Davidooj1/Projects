@@ -139,8 +139,6 @@ while intro != "rapid fire" and intro != "search":
 # the csv file to collect the name, and prints them in the same fashion as the 1st mode.
 
 
-
-
 # THINGS I COULDN'T FIX YET:
 
 # In the Rapid Fire mode,
